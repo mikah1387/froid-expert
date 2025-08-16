@@ -1,0 +1,123 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* 1. Correct the line height in all browsers. */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 2. Remove the margin in all browsers. */
+body {
+  margin: 0;
+}
+
+/* 3. Improve consistency of default font in iOS and Safari. */
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* 4. Correct the font style in all browsers. */
+button,
+select {
+  text-transform: none;
+}
+
+/* 5. Correct the inability to style clickable types in iOS and Safari. */
+button,
+[type="button"],
+[type="reset"],
+
+
+/* 6. Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* 7. Restore focus styles in Firefox. */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* 8. Correct the padding in Firefox. */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/* 9. Correct the legend element in all browsers. */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/* 10. Add the correct display in Edge and IE. */
+progress {
+  vertical-align: baseline;
+}
+
+/* 11. Remove the default vertical scrollbar in IE 10+. */
+textarea {
+  overflow: auto;
+}
+
+/* 12. Correct the box sizing for checkbox and radio inputs. */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* 13. Correct the appearance in Chrome and Safari. */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* 15. Remove the inner padding in Chrome and Safari on macOS. */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* 16. Correct the display of details/summary in all browsers. */
+details {
+  display: block;
+}
+
+/* 17. Add the correct styles to summary. */
+summary {
+  display: list-item;
+}
+
+/* 18. Normalize the appearance of headings. */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* 19. Reset anchor styles. */
+a {
+  background-color: transparent;
+}
+
+/* 20. Improve image rendering in IE. */
+img {
+  border-style: none;
+}

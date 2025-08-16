@@ -1,0 +1,278 @@
+.devis {
+  padding: 5rem  2rem 0;
+ 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 53px);
+  overflow: hidden;
+
+  #devis-form {
+    // background: #f3dbdb;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 80%;
+    max-width: 80%;
+
+    @media screen and (max-width: 650px) {
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    form {
+      .step {
+        display: none;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+
+        &.active {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          opacity: 1;
+          transform: translateY(0);
+          animation: fadeIn 0.5s ease forwards;
+        }
+
+        h2 {
+          font-size: clamp(1rem, 3.636vw, 3rem);
+          margin-bottom: 3rem;
+          color: #2c3e50;
+          text-align: center;
+          font-family: poppins, sans-serif;
+          font-weight: 500;
+        }
+        p {
+          padding: 2rem 1rem;
+          margin: 1rem auto;
+          width: 80%;
+          font-size: clamp(0.8rem, 2vw, 1.2rem);
+          text-align: center;
+          background: #c7f9cc;
+          color: #4f772d;
+          font-weight: 400;
+
+          border-radius: 15px;
+          border: 0.5px solid #80ed99;
+        }
+        .radioparent {
+          display: flex;
+          flex-wrap: wrap;
+
+          align-items: center;
+          justify-content: center;
+          // border: 1px solid black;
+
+          input[type="radio"] {
+            opacity: 0;
+          }
+          .spanparent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+            width: clamp(150px, 20vw, 260px);
+            height: clamp(120px, 14vw, 210px);
+            border: 0.5px solid rgb(189, 227, 245);
+            border-radius: 5px;
+            background-color: #e4ecf8;
+            transition: all 0.3s ease;
+            @media screen and (max-width: 500px) {
+              margin: 10px;
+            }
+            &:hover {
+              transform: translateY(-3px);
+
+              box-shadow: #d1e5ff 0px 48px 100px 0px;
+            }
+
+            .icone {
+              font-size: clamp(1rem, 8vw, 3.5rem);
+            }
+            .label {
+              font-size: clamp(0.8rem, 3vw, 1.2rem);
+              margin-top: 20px;
+              font-weight: 500;
+            }
+          }
+          input[type="radio"]:checked + .spanparent {
+            background-color: #d1e5ff;
+
+            border: 1.5px solid #0077b6;
+          }
+        }
+
+        input[type="number"],
+        input {
+          width: 50%;
+          display: block;
+          margin: 0 auto;
+          padding: 0.75rem 1rem;
+          font-size: 1rem;
+          border: 0.5px solid rgb(189, 227, 245);
+
+          border-radius: 8px;
+          background-color: #fff;
+          transition: all 0.2s ease;
+          @media screen and (max-width: 500px) {
+            width: 80%;
+          }
+          &:focus {
+            border: 1.5px solid #0077b6;
+            //   box-shadow: #d1e5ff 0px 48px 100px 0px;
+            box-shadow: #d1e5ff 0px 3px 8px;
+            outline: none;
+          }
+          &.error {
+            border: 2px solid red;
+            background-color: #ffecec;
+          }
+        }
+        .label-info {
+          font-weight: 500;
+          display: block;
+          width: 50%;
+          margin: 10px auto;
+
+          color: #333;
+          @media screen and (max-width: 500px) {
+            width: 80%;
+          }
+        }
+      }
+
+      .btn_form {
+        display: flex;
+        width: 50%;
+        margin: 0 auto;
+        @media screen and (max-width: 680px) {
+          width: 100%;
+        }
+
+        button {
+          display: block;
+          margin: 50px auto;
+          margin-right: 10px;
+          background: #3498db;
+          color: #fff;
+          padding: 0.7rem 2rem;
+          font-size: 1rem;
+
+          border: none;
+          border-radius: 25px;
+          cursor: pointer;
+          transition: background 0.3s ease, transform 0.2s ease;
+
+          &:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+          }
+
+          &.prev {
+            background: #95a5a6;
+            margin-left: 10px;
+
+            &:hover {
+              background: #7f8c8d;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .last-step {
+    width: 60%;
+    margin: 0 auto;
+    @media screen and (max-width: 600px) {
+      width: 90%;
+    }
+
+    h2 {
+      margin: 20px;
+    }
+    .results {
+      background: #f9fafc;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      border-left: 4px solid #80ed99;
+
+      h3 {
+        margin-bottom: 0.5rem;
+        color: #2c3e50;
+      }
+
+      p {
+        margin: 0.3rem 0;
+
+        span {
+          color: #27ae60;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  #confirmation {
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    width: 80%;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    text-align: center;
+    background: #c7f9cc;
+    color: #4f772d;
+    font-weight: 400;
+
+    border-radius: 15px;
+    border: 0.5px solid #80ed99;
+  }
+  .loader-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.9);
+    display: none; // caché par défaut
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+
+  .spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ddd;
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 15px;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loader-overlay p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

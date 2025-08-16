@@ -1,0 +1,21 @@
+{
+  "name": "kader",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass-embedded": "^1.89.2",
+    "vite": "^7.0.4"
+  },
+  "dependencies": {
+    "emailjs-com": "^3.2.0",
+    "jspdf": "^3.0.1"
+  }
+}
