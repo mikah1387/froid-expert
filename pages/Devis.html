@@ -1,0 +1,483 @@
+<section class="devis">
+    <div id="devis-form">
+        <div id="confirmation" style="display: none;">
+            <p>Merci ! Votre demande a bien été envoyée.</p>
+        </div>
+        <form id="multiStepForm">
+            <div class="step active">
+                <h2>Ce devis est fourni à titre indicatif et approximatif. </h2>
+                <p>
+                    Il a pour objectif de vous donner une première estimation et de vous informer sur l’ensemble des
+                    aides et dispositifs
+                    auxquels vous pourriez être éligible pour votre projet. <br>
+                    Un conseiller pourra ensuite affiner ce chiffrage en fonction de vos besoins précis et de votre
+                    situation.
+                </p>
+
+
+                <div class="btn_form">
+                    <button type="button" class="next">Commencer</button>
+                </div>
+            </div>
+            <!-- Étape 1 -->
+            <div class="step">
+                <h2>Votre projet concerne : </h2>
+                <div class="radioparent">
+                    <label>
+
+                        <input type="radio" value="maison" name="maison" checked>
+                        <div class="spanparent">
+                            <span class="icone">🏠</span>
+                            <span class="label">Maison</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="appartement" name="maison">
+                        <div class="spanparent">
+                            <span class="icone">🏢</span>
+                            <span class="label">appartement</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="btn_form">
+                    <button type="button" class="prev">Précédent</button>
+                    <button type="button" class="next">Suivant</button>
+                </div>
+            </div>
+
+
+            <!-- Étape 2 -->
+            <div class="step">
+                <h2>La construction de ce logement date de : </h2>
+                <div class="radioparent">
+                    <label>
+
+                        <input type="radio" value="Mains de 2 ans" name="date-construction">
+                        <div class="spanparent">
+                            <span class="icone">🏠</span>
+                            <span class="label">Mains de 2 ans </span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="entre 5 et 15 ans" name="date-construction" checked>
+                        <div class="spanparent">
+                            <span class="icone">🏠</span>
+                            <span class="label">entre 5 et 15 ans </span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="plus de 15 ans" name="date-construction">
+                        <div class="spanparent">
+                            <span class="icone">🏠</span>
+                            <span class="label">plus de 15 ans </span>
+                        </div>
+                    </label>
+                </div>
+                <div class="btn_form">
+                    <button type="button" class="prev">Précédent</button>
+                    <button type="button" class="next">Suivant</button>
+                </div>
+            </div>
+
+
+
+            <!-- Étape 3 -->
+            <div class="step">
+
+                <h2> Quelle est la surface habitable du logement en M² : ?</h2>
+                <label>
+                    <input type="number" name="surface" value="100" required>
+                </label>
+                <div class="btn_form">
+                    <button type="button" class="prev">Précédent</button>
+                    <button type="button" class="next">Suivant</button>
+                </div>
+            </div>
+            <!-- Étape 4 -->
+            <div class="step">
+
+                <h2> Aujourd’hui, quel est votre mode de chauffage principal pour ce logement ?</h2>
+
+                <div class="radioparent">
+                    <label>
+
+                        <input type="radio" value="Chauffage au fioul" name="chauffage" checked>
+                        <div class="spanparent">
+                            <span class="icone">🛢️</span>
+                            <span class="label">Chauffage au fioul</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="Chauffage électrique" name="chauffage">
+                        <div class="spanparent">
+                            <span class="icone">⚡</span>
+                            <span class="label">Chauffage électrique</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="Chauffage au gaz" name="chauffage">
+                        <div class="spanparent">
+                            <span class="icone">🔥 </span>
+                            <span class="label">Chauffage au gaz</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="Chauffage au bois" name="chauffage">
+                        <div class="spanparent">
+                            <span class="icone">🪵</span>
+                            <span class="label">Chauffage au bois</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="btn_form">
+                    <button type="button" class="prev">Précédent</button>
+                    <button type="button" class="next">Suivant</button>
+                </div>
+
+            </div>
+            <!-- Étape 5 -->
+            <div class="step">
+
+                <h2> Quel est le système de chauffage électrique installé ?</h2>
+
+                <div class="radioparent">
+                    <label>
+
+                        <input type="radio" value="Chaudière électrique" name="systeme-chauffage">
+                        <div class="spanparent">
+                            <span class="icone">🔌🔥</span>
+                            <span class="label">Chaudière électrique</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="planchers chauffants" name="systeme-chauffage">
+                        <div class="spanparent">
+                            <span class="icone">🔥🟫</span>
+                            <span class="label">planchers chauffants</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="Radiateurs électriques" name="systeme-chauffage">
+                        <div class="spanparent">
+                            <span class="icone">♨️🔌 </span>
+                            <span class="label">Radiateurs électriques</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="autres" name="systeme-chauffage" checked>
+                        <div class="spanparent">
+                            <span class="icone"> </span>
+                            <span class="label">Autres</span>
+                        </div>
+                    </label>
+
+                </div>
+                <div class="btn_form">
+                    <button type="button" class="prev">Précédent</button>
+                    <button type="button" class="next">Suivant</button>
+                </div>
+
+            </div>
+            <!-- Étape 6 -->
+            <div class="step">
+
+                <h2> Quelle est sa classe énergétique ?</h2>
+
+                <div class="radioparent">
+                    <label>
+
+                        <input type="radio" value="A" name="dpe-logement">
+                        <div class="spanparent">
+                            <span class="icone">A</span>
+                            <span class="label">Etiquette A</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="B" name="dpe-logement">
+                        <div class="spanparent">
+                            <span class="icone">B</span>
+                            <span class="label">Etiquette B</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="C" name="dpe-logement" checked>
+                        <div class="spanparent">
+                            <span class="icone">C</span>
+                            <span class="label">Etiquette C</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="D" name="dpe-logement">
+                        <div class="spanparent">
+                            <span class="icone">D </span>
+                            <span class="label">Etiquette D</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="E" name="dpe-logement">
+                        <div class="spanparent">
+                            <span class="icone">E </span>
+                            <span class="label">Etiquette E</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="F" name="dpe-logement">
+                        <div class="spanparent">
+                            <span class="icone">F </span>
+                            <span class="label">Etiquette F</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="G" name="dpe-logement">
+                        <div class="spanparent">
+                            <span class="icone">G </span>
+                            <span class="label">Etiquette G</span>
+                        </div>
+                    </label>
+
+                </div>
+                <div class="btn_form">
+                    <button type="button" class="prev">Précédent</button>
+                    <button type="button" class="next">Suivant</button>
+                </div>
+
+            </div>
+            <!-- Étape 7 -->
+            <div class="step">
+
+                <h2>Quels travaux envisagez-vous de réaliser ?</h2>
+
+                <div class="radioparent">
+                    <label>
+
+                        <input type="radio" value="pompe-Air/Eau" name="travaux" checked>
+                        <div class="spanparent">
+                            <span class="icone">💧 </span>
+                            <span class="label">Pompe à Chaleur Air/Eau</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="pompe-Géothermique" name="travaux">
+                        <div class="spanparent">
+                            <span class="icone">💧➿ </span>
+                            <span class="label">Pompe Géothermique</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="Clim-rever" name="travaux">
+                        <div class="spanparent">
+                            <span class="icone">🧊 </span>
+                            <span class="label">Climatisation réversible</span>
+                        </div>
+                    </label>
+
+
+                </div>
+                <div class="btn_form">
+                    <button type="button" class="prev">Précédent</button>
+                    <button type="button" class="next">Suivant</button>
+                </div>
+
+            </div>
+            <!-- Étape 8 -->
+            <div class="step">
+
+                <h2>Souhaitez-vous que votre pompe à chaleur fournisse
+                    également de l’eau chaude sanitaire ?</h2>
+
+                <div class="radioparent">
+                    <label>
+
+                        <input type="radio" value="chauffage seul" name="type-travaux" checked>
+                        <div class="spanparent">
+                            <span class="icone">🔥 </span>
+                            <span class="label">chauffage seul</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="Chauffage + eau chaude sanitaire" name="type-travaux">
+                        <div class="spanparent">
+                            <span class="icone">💧🔥 </span>
+                            <span class="label">Chauffage + </span>
+                            <span class="label"> eau chaude sanitaire</span>
+                        </div>
+                    </label>
+
+
+
+                </div>
+                <div class="btn_form">
+                    <button type="button" class="prev">Précédent</button>
+                    <button type="button" class="next">Suivant</button>
+                </div>
+
+            </div>
+            <!-- Étape 9 -->
+            <div class="step">
+
+                <h2>Un emplacement est-il disponible à l’extérieur de votre logement ?</h2>
+                <p>L’installation d’une pompe à chaleur Air-eau nécessite la pose d’un module extérieur (environ 2 m²).
+                </p>
+
+                <div class="radioparent">
+                    <label>
+
+                        <input type="radio" value="oui" name="emplacement">
+                        <div class="spanparent">
+                            <span class="icone"> 🧱</span>
+                            <span class="label">oui</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="non" name="emplacement" checked>
+                        <div class="spanparent">
+                            <span class="icone">🍵 </span>
+                            <span class="label">Non</span>
+
+                        </div>
+                    </label>
+
+
+
+                </div>
+                <div class="btn_form">
+                    <button type="button" class="prev">Précédent</button>
+                    <button type="button" class="next">Suivant</button>
+                </div>
+
+            </div>
+            <!-- Étape 10 -->
+
+            <div class="step">
+
+                <h2> Combien de personnes composent votre foyer, y compris vous-même ?</h2>
+                <p>Cette information nous permet de vous donner une estimation plus précise de vos aides !</p>
+                <label>
+                    <input type="number" name="adultes" value="2" required>
+                </label>
+                <div class="btn_form">
+                    <button type="button" class="prev">Précédent</button>
+                    <button type="button" class="next">Suivant</button>
+                </div>
+            </div>
+            <!-- Étape 11 -->
+            <div class="step">
+
+                <h2>Quel est le revenu approximatif de votre foyer fiscal ?</h2>
+
+
+                <div class="radioparent">
+                    <label>
+
+                        <input type="radio" value="inférieur à 25 116 €" name="revenu-fiscal">
+                        <div class="spanparent">
+                            <span class="icone">💰</span>
+                            <span class="label">inférieur à 25 116 €</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="inférieur à 32 198 €" name="revenu-fiscal" checked>
+                        <div class="spanparent">
+                            <span class="icone">💰</span>
+                            <span class="label">inférieur à 32 198 €</span>
+
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="inférieur à 45 341 €" name="revenu-fiscal">
+                        <div class="spanparent">
+                            <span class="icone">💰</span>
+                            <span class="label">inférieur à 45 341 €</span>
+
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" value="supérieur à 45 341 €" name="revenu-fiscal">
+                        <div class="spanparent">
+                            <span class="icone">💰</span>
+                            <span class="label">supérieur ou égale à
+                                45 341 €</span>
+
+                        </div>
+                    </label>
+
+
+
+                </div>
+                <div class="btn_form">
+                    <button type="button" class="prev">Précédent</button>
+                    <button type="button" class="next">Suivant</button>
+                </div>
+
+            </div>
+
+
+
+            <!-- Étape 12 -->
+            <div class="step">
+                <h2> Vos informations personnelles</h2>
+                <label class="label-info" for="nom">Nom</label>
+                <input type="text" id="nom" name="nom">
+                <label class="label-info" for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom">
+                <label class="label-info" for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label class="label-info" for="adresse">Adresse</label>
+                <input type="text" id="adresse" name="adresse" required>
+                <label class="label-info" for="code-postal">Code Postal</label>
+                <input type="text" id="code-postal" name="code-postal" required>
+                <label class="label-info" for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" required>
+                <div class="btn_form">
+                    <button type="button" class="prev">Précédent</button>
+                    <button type="submit">Envoyer</button>
+                </div>
+            </div>
+            <!-- Étape 10 -->
+
+
+        </form>
+        <div id="loader" class="loader-overlay">
+            <div class="spinner"></div>
+            <p>Traitement en cours...</p>
+        </div>
+        <div class="last-step" style="display: none;">
+            <h2>Vos résultats</h2>
+            <div class="results">
+                <h3>Chauffage</h3>
+                <p>Pompes à chaleur air/eau <span> jusqu'a 8000 €</span></p>
+                <p>Pompes à chaleur géothermique <span> jusqu'a 14 000 €</span></p>
+            </div>
+            <div class="results">
+                <h3>MaprimeRénov</h3>
+                <p>précision: La prestation doit être inférieure à 18 000 € et Sous condition de recours à un
+                    professionnel RGE <span> jusqu'a 9000 €</span></p>
+
+            </div>
+            <div class="results">
+                <h3>Prime CEE (Certificats d'Économie d'Énergie)</h3>
+                <p>Prime existante
+                    <span> Ce montant vous est donné à titre indicatif</span>
+                </p>
+
+            </div>
+            <div class="results">
+                <h3>Solutions solaires</h3>
+                <p>Pompe à chaleur solarothermique
+                    <span> Jusqu'à 14 000 €</span>
+                </p>
+                <p>Chauffe-eau solaire individuel en Métropole
+                    <span> Jusqu'à 3 221 €</span>
+                </p>
+
+            </div>
+            <div class="results">
+                <h3>Accompagnement</h3>
+                <p class="accompagnement"> <span>👨‍🔧</span> un professionnel RGE va vous contacter pour vous
+                    accompagner dans votre projet de rénovation.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
